@@ -14,13 +14,18 @@
             height: 100%;
             background-color: rgba(0, 0, 0, .2);
         }
+        ff {
+            font-family: verdana;
+            font-size: 20px;
+        }
+       
     </style>
 </head>
-<body onload="animate_string()">
-    <pre id="target"> thật tuyệt Die.Vn </pre>
+<body>
+   
  
     <canvas id="heart"></canvas>
-    <p id="tt">Xin chào, cô gái dâu tây</p>
+    <ff id="tt">Xin chào, cô gái dâu tây</ff>
 
     <script>
         window.requestAnimationFrame =
@@ -50,7 +55,7 @@
             var mobile = window.isDevice;
             var koef = mobile ? 0.5 : 1;
             var canvas = document.getElementById('heart');
-            var p = document.getElementById('tt');
+            var ff = document.getElementById('tt');
             var ctx = canvas.getContext('2d');
             var width = canvas.width = koef * innerWidth;
             var height = canvas.height = koef * innerHeight;
