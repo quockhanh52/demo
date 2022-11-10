@@ -20,6 +20,7 @@
     <pre id="target"> thật tuyệt Die.Vn </pre>
  
     <canvas id="heart"></canvas>
+    <p id="tt">Xin chào, cô gái dâu tây</p>
 
     <script>
         window.requestAnimationFrame =
@@ -49,6 +50,7 @@
             var mobile = window.isDevice;
             var koef = mobile ? 0.5 : 1;
             var canvas = document.getElementById('heart');
+            var p = document.getElementById('tt');
             var ctx = canvas.getContext('2d');
             var width = canvas.width = koef * innerWidth;
             var height = canvas.height = koef * innerHeight;
