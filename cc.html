@@ -15,7 +15,23 @@
             background-color: rgba(0, 0, 0, .2);
         }
     </style>
-   <canvas id="heart"></canvas>
+
+ 
+</head>
+<body>
+    <button onclick="hello()">Xin chào</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function hello(){
+            var name = "Nguyễn Thành Nhân";
+            var year = 1993;
+            var str = "Tôi tên " + name + " sinh năm " + year;
+            document.getElementById("demo").innerHTML = str;
+        }
+    </script>
+      <canvas id="heart"></canvas>
 
     <script>
         window.requestAnimationFrame =
@@ -165,9 +181,6 @@
         if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
         else document.addEventListener('DOMContentLoaded', init, false);
     </script>
-</head>
-<body>
-  <h1>Xin chào, cô gái dâu tây</h1>
-  <button onclick="cc">Click vào đây</button>
+
 </body>
 </html>
